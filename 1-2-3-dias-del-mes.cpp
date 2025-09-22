@@ -1,10 +1,10 @@
-/*******************************************************************************
+/******************************************************************************
  * Autores: Javier Martínez y Miguel Ángel Latre
  * Última revisión: 19-10-2020
  * Resumen: Programa interactivo que pregunta repetidamente por un mes y
- *          un año y escribe en la pantalla el número de días que tiene el mes. 
+ *          un año y escribe en la pantalla el número de días que tiene el mes.
  *          Problemas de Programación 1 con funciones (tema 5).
- ******************************************************************************/
+ *****************************************************************************/
 #include <iostream>
 using namespace std;
 
@@ -54,10 +54,10 @@ unsigned diasDelMes(unsigned mes, unsigned agno) {
 
 /*
  * Programa que pregunta repetidamente por un mes y un año. Si el mes está
- * comprendido entre 1 y 12 y el año es posterior a 1582, el programa escribe en
- * la pantalla el número de días que tiene el mes. En caso contrario, escribe un
- * mensaje de error. El programa termina cuando el usuario escribe 0 tanto para
- * el mes como para el año.
+ * comprendido entre 1 y 12 y el año es posterior a 1582, el programa escribe
+ * en la pantalla el número de días que tiene el mes. En caso contrario,
+ * escribe un mensaje de error. El programa termina cuando el usuario escribe 0
+ * tanto para el mes como para el año.
  */
 int main() {
     cout << "Escriba un mes y un año: ";
