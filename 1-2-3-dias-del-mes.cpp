@@ -1,6 +1,5 @@
 /******************************************************************************
  * Autores: Javier Martínez y Miguel Ángel Latre
- * Última revisión: 19-10-2020
  * Resumen: Programa interactivo que pregunta repetidamente por un mes y
  *          un año y escribe en la pantalla el número de días que tiene el mes.
  *          Problemas de Programación 1 con funciones (tema 5).
