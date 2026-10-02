@@ -2,7 +2,7 @@
  * Autores: Javier Martínez y Miguel Ángel Latre
  * Resumen: Programa interactivo que pregunta repetidamente por un mes y
  *          un año y escribe en la pantalla el número de días que tiene el mes.
- *          Problemas de Programación 1 con funciones (tema 5).
+ *          Problemas de Programación 1 con funciones (tema 6).
  *****************************************************************************/
 #include <iostream>
 using namespace std;
@@ -17,6 +17,8 @@ const int AGNO_INICIO_GREGORIANO = 1582;
  * Pre:  agno > 1582
  * Post: Devuelve «true» si y solo si el año «agno» es bisiesto de acuerdo con
  *       las reglas del calendario gregoriano.
+ * Nota: La solución que se muestra a continuación es distinta a la del
+ *       problema 1 y también algo más elegante.
  */
 bool esBisiesto(unsigned agno) {
     bool multiplo4   = (agno %   4 == 0);
