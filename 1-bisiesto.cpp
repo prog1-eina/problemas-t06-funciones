@@ -31,19 +31,24 @@ bool esBisiesto(unsigned agno) {
 }
 
 /*
- * Programa que pide al usuario un año y escribe en la pantalla si es bisiesto
- * o no.
+ * Programa que pide al usuario un año posterior a 1582 y escribe en la
+ * pantalla si es bisiesto o no.
  */
 int main() {
-    cout << "Escriba un un año: ";
-    unsigned agno;
+    cout << "Escriba un año posterior a " << AGNO_INICIO_GREGORIANO << ": ";
+    int agno;
     cin >> agno;
 
-    if (esBisiesto(agno)) {
-        cout << "El año " << agno << " es bisiesto." << endl;
+    if (agno > AGNO_INICIO_GREGORIANO) {
+        if (esBisiesto(agno)) {
+            cout << "El año " << agno << " es bisiesto." << endl;
+        } else {
+            cout << "El año " << agno << " no es bisiesto." << endl;
+        }    
+        return 0;
     } else {
-        cout << "El año " << agno << " no es bisiesto." << endl;
+        cout << "Error: el año debe ser posterior a " << AGNO_INICIO_GREGORIANO
+             << "." << endl;
+        return 1;
     }
-    
-    return 0;
 }
